@@ -1,75 +1,84 @@
 export type RegularPage = {
   frontmatter: {
-    title: string;
-    image?: string;
-    description?: string;
-    meta_title?: string;
-    layout?: string;
-    draft?: boolean;
-  };
-  content: string;
-  slug?: string;
-};
+    title: string
+    image?: string
+    description?: string
+    meta_title?: string
+    layout?: string
+    draft?: boolean
+  }
+  content: string
+  slug?: string
+}
 
 export type Post = {
   frontmatter: {
-    title: string;
-    meta_title?: string;
-    description?: string;
-    image?: string;
-    categories: string[];
-    author: string;
-    tags: string[];
-    date?: string;
-    draft?: boolean;
-  };
-  slug?: string;
-  content?: string;
-};
+    title: string
+    meta_title?: string
+    description?: string
+    image?: string
+    categories: string[]
+    author: string
+    tags: string[]
+    date?: string
+    draft?: boolean
+  }
+  slug?: string
+  content?: string
+}
 
 export type Author = {
   frontmatter: {
-    title: string;
-    image?: string;
-    description?: string;
-    meta_title?: string;
+    title: string
+    image?: string
+    description?: string
+    meta_title?: string
     social: [
       {
-        name: string;
-        icon: string;
-        link: string;
+        name: string
+        icon: string
+        link: string
       },
-    ];
-  };
-  content?: string;
-  slug?: string;
-};
+    ]
+  }
+  content?: string
+  slug?: string
+}
 
 export type Feature = {
-  button: button;
-  image: string;
-  bulletpoints: string[];
-  content: string;
-  title: string;
-};
+  button: button
+  image: string
+  bulletpoints: string[]
+  content: string
+  title: string
+}
+
+export type IService = {
+  icon: string
+  title: string
+  body: string
+  graphic?: string
+}
 
 export type Testimonial = {
-  name: string;
-  designation: string;
-  avatar: string;
-  content: string;
-};
+  name: string
+  designation: string
+  avatar: string
+  content: string
+  logo: string
+}
 
 export type Call_to_action = {
-  enable?: boolean;
-  title: string;
-  description: string;
-  image: string;
-  button: Button;
-};
+  enable?: boolean
+  title: string
+  description: string
+  image: string
+  image2: string
+  button: Button
+}
 
 export type Button = {
-  enable: boolean;
-  label: string;
-  link: string;
-};
+  enable: boolean
+  label: string
+  link: string
+}

@@ -129,32 +129,44 @@ const Header = () => {
           ))}
           {navigation_button.enable && (
             <li className="mt-4 inline-block lg:hidden">
-              <Link
-                className="btn btn-outline-primary btn-sm"
-                href={navigation_button.link}
-              >
-                {navigation_button.label}
-              </Link>
+              {navigation_button.link === "#about" ? (
+                <Link
+                  className="btn btn-outline-primary btn-sm"
+                  href={navigation_button.link}
+                >
+                  {navigation_button.label}
+                </Link>
+              ) : (
+                <Link
+                  className="btn btn-outline-primary btn-sm"
+                  href={navigation_button.link}
+                >
+                  {navigation_button.label}
+                </Link>
+              )}
             </li>
           )}
         </ul>
         <div className="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
-          {settings.search && (
-            <Link
-              className="mr-5 inline-block border-r border-border pr-5 text-xl text-dark hover:text-primary dark:border-darkmode-border dark:text-white"
-              href="/search"
-              aria-label="search"
-            >
-              <IoSearch />
-            </Link>
-          )}
-          <ThemeSwitcher className="mr-5" />
           {navigation_button.enable && (
             <Link
-              className="btn btn-outline-primary btn-sm hidden lg:inline-block"
+              className="btn bg-light_bg btn-sm hidden lg:inline-block rounded-full"
               href={navigation_button.link}
             >
               {navigation_button.label}
+              <svg
+                width="9"
+                height="8"
+                viewBox="0 0 9 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="inline ml-2"
+              >
+                <path
+                  d="M1 2.99996H0V4.99996H1V2.99996ZM1 4.99996H8V2.99996H1V4.99996ZM4.12903 0C4.12903 2.73026 6.27918 5 8.99999 5V3C7.44506 3 6.12903 1.68801 6.12903 0H4.12903ZM8.99999 3C6.27921 3 4.12894 5.2697 4.12894 8H6.12894C6.12894 6.31201 7.44503 5 8.99999 5V3Z"
+                  fill="black"
+                />
+              </svg>
             </Link>
           )}
         </div>
