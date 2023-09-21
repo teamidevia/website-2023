@@ -14,7 +14,7 @@ const CallToAction = ({ data }: { data: PageData }) => {
       {data.frontmatter.enable && (
         <section className="bg-secondary">
           <div className="container">
-            <div className="px-4 pt-16 dark:bg-darkmode-theme-light xl:p-20 xl:pb-0">
+            <div className="px-4 pt-16  xl:p-20 xl:pb-0">
               <div className="row justify-between">
                 <div className="col-12 text-center">
                   <h2

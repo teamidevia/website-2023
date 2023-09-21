@@ -48,7 +48,7 @@ const Header = () => {
         <input id="nav-toggle" type="checkbox" className="hidden" />
         <label
           htmlFor="nav-toggle"
-          className="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1"
+          className="order-3 cursor-pointer flex items-center lg:hidden text-dark  lg:order-1"
         >
           <svg
             id="show-button"
@@ -112,38 +112,28 @@ const Header = () => {
                     ))}
                   </ul>
                 </li>
-              ) : (
-                <li className="nav-item">
-                  <Link
-                    href={menu.url}
-                    className={`nav-link block ${
-                      (pathname === `${menu.url}/` || pathname === menu.url) &&
-                      "active"
-                    }`}
-                  >
-                    {menu.name}
-                  </Link>
-                </li>
-              )}
+              ) : // <li className="nav-item">
+              //   <Link
+              //     href={menu.url}
+              //     className={`nav-link block ${
+              //       (pathname === `${menu.url}/` || pathname === menu.url) &&
+              //       "active"
+              //     }`}
+              //   >
+              //     {menu.name}
+              //   </Link>
+              // </li>
+              null}
             </React.Fragment>
           ))}
           {navigation_button.enable && (
             <li className="mt-4 inline-block lg:hidden">
-              {navigation_button.link === "#about" ? (
-                <Link
-                  className="btn btn-outline-primary btn-sm"
-                  href={navigation_button.link}
-                >
-                  {navigation_button.label}
-                </Link>
-              ) : (
-                <Link
-                  className="btn btn-outline-primary btn-sm"
-                  href={navigation_button.link}
-                >
-                  {navigation_button.label}
-                </Link>
-              )}
+              <Link
+                className="btn btn-outline-primary btn-sm"
+                href={navigation_button.link}
+              >
+                {navigation_button.label}
+              </Link>
             </li>
           )}
         </ul>

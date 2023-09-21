@@ -4,7 +4,7 @@ const SectionHeading = ({
   dark,
 }: {
   title: string;
-  dark: boolean;
+  boolean;
   className: string;
 }) => {
   return (

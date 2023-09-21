@@ -30,7 +30,7 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx}",
   ],
   safelist: [{ pattern: /^swiper-/ }],
-  darkMode: "class",
+  
   theme: {
     screens: {
       sm: "540px",
@@ -57,20 +57,7 @@ module.exports = {
         "nav-link": theme.colors.default.text_color.navigation_text,
         "theme-light": theme.colors.default.theme_color.theme_light,
         "theme-dark": theme.colors.default.theme_color.theme_dark,
-        darkmode: {
-          text: theme.colors.darkmode.text_color.default,
-          light: theme.colors.darkmode.text_color.light,
-          dark: theme.colors.darkmode.text_color.dark,
-          primary: theme.colors.darkmode.theme_color.primary,
-          secondary: theme.colors.darkmode.theme_color.secondary,
-          accent: theme.colors.darkmode.theme_color.accent,
-          body: theme.colors.darkmode.theme_color.body,
-          border: theme.colors.darkmode.theme_color.border,
-          light_bg: theme.colors.default.theme_color.light_background,
-          "nav-link": theme.colors.default.text_color.navigation_text,
-          "theme-light": theme.colors.darkmode.theme_color.theme_light,
-          "theme-dark": theme.colors.darkmode.theme_color.theme_dark,
-        },
+        
       },
       fontSize: {
         base: font_base + "px",

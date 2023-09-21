@@ -57,7 +57,7 @@ const Testimonials = ({ data }: { data: PageData }) => {
                   {data.frontmatter.testimonials.map(
                     (item: Testimonial, index: number) => (
                       <SwiperSlide key={index}>
-                        <div className="px-4 md:px-24 py-10 dark:bg-darkmode-theme-light">
+                        <div className="px-4 md:px-24 py-10 ">
                           <blockquote
                             className="my-8 text-white"
                             dangerouslySetInnerHTML={markdownify(item.content)}
@@ -65,7 +65,7 @@ const Testimonials = ({ data }: { data: PageData }) => {
                           <hr className="opacity-30" />
                           <div className="mt-11 flex justify-between items-center">
                             <div className="flex items-center">
-                              <div className="text-dark dark:text-white">
+                              <div className="text-dark ">
                                 <ImageFallback
                                   height={80}
                                   width={80}
@@ -85,12 +85,12 @@ const Testimonials = ({ data }: { data: PageData }) => {
                                   dangerouslySetInnerHTML={markdownify(
                                     item.designation,
                                   )}
-                                  className="text-white dark:text-dark text-sm"
+                                  className="text-white  text-sm"
                                 />
                               </div>
                             </div>
                             <div>
-                              <img src={item.logo} alt="" />
+                              <img src={item.logo} alt="" className=" h-20" />
                             </div>
                           </div>
                         </div>

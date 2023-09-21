@@ -17,24 +17,6 @@
         "dark": "#040404",
         "light": "#717171"
       }
-    },
-    "darkmode": {
-      "theme_color": {
-        "primary": "#fff",
-        "secondary": "#002B72",
-        "accent": "#C2F970",
-        "light_background": "#EDF1FF",
-        "navigation_text": "#6F7784",
-        "body": "#1c1c1c",
-        "border": "#3E3E3E",
-        "theme_light": "#222222",
-        "theme_dark": ""
-      },
-      "text_color": {
-        "default": "#B4AFB6",
-        "dark": "#fff",
-        "light": "#B4AFB6"
-      }
     }
   },
   "fonts": {
@@ -44,9 +26,6 @@
       "secondary": "Teko:wght@300",
       "secondary_type": "sans-serif"
     },
-    "font_size": {
-      "base": "16",
-      "scale": "1.250"
-    }
+    "font_size": { "base": "16", "scale": "1.250" }
   }
 }
